@@ -101,7 +101,7 @@ import java.util.Scanner;
         }
     }
 //설명 입력받은 op값에 따라서 switch 문을 사용하여 사칙연산을 수행합니다. 특히 난눗셈(case'/')의 경우에 num2가 0인지 확인하여
-나누는 오류를 방지하며 적절한 메시지를 출력을 한다.valid 변수를 사용하여 연산의 성공 여부를 기록합니다
+//나누는 오류를 방지하며 적절한 메시지를 출력을 한다.valid 변수를 사용하여 연산의 성공 여부를 기록합니다
 
 
 
@@ -167,7 +167,7 @@ import java.util.Scanner;
         }
     }
         //설명 while(true) 무한 루프를 사용하여 사용자가 exit를 입력하기 전까지 계속해서 계산을 수행
-        할 수 있도록 합니다.사용자ㅑ가 "exit"를 입력하면 break 문을 통해 반복문을 종료하고 프로그램을 끝낸다
+        //할 수 있도록 합니다.사용자ㅑ가 "exit"를 입력하면 break 문을 통해 반복문을 종료하고 프로그램을 끝낸다
 
 
 
@@ -229,9 +229,9 @@ import java.util.Scanner;
             sc.close();
         }
     }
-설명 LinkedList<Inteager> 타입의 result 변수를 선언하여 연산 결과를 저장합니다. LinkedList는 요소의 추가
-    /삭제가 효울적아며 특히나 removeFirst()메소드로 가장 오래된 데이터를 쉽게 삭제할 수 있어 이번 문제에 적합하다
-    연산이 성공적일 때(valid가 true일 때만)결과를 result에 추가한다
+//설명 //LinkedList<Inteager> 타입의 result 변수를 선언하여 연산 결과를 저장합니다. LinkedList는 요소의 추가
+    //삭제가 효울적아며 특히나 removeFirst()메소드로 가장 오래된 데이터를 쉽게 삭제할 수 있어 이번 문제에 적합하다
+    //연산이 성공적일 때(valid가 true일 때만)결과를 result에 추가한다
 
 
 
@@ -298,7 +298,8 @@ import java.util.Scanner;
     }
 
 
-
+    //설명 result 컬렉션의 크기가 10개가 되는 시점에 새로운 결과를 추가하기 전에 removeFirst() 메소드를 호출하여 먼저 저장된
+    // 결과를 자동으로 삭제를 하게됩니다. 이렇게 하면 컬렉션은 항상 최대 10개의 결과를 남게됩니다
 
 //레벨1-7
 import java.util.LinkedList;
@@ -365,6 +366,10 @@ import java.util.Scanner;
                     break;
                 }
             }
+
+            //설명 사용자에게 가장 먼저 저장된 연산 결과 삭제 여부를 묻고나서 "remove"를 입력하면 results.removeFirst()를 호출하여
+            //가장 오래된 결과를 삭제합니다.!results.isEmpty()로 컬렉션이 비어있지 않는지 먼저 확인을 하여 오류를 방지한다
+
 
 
 //레벨1-8
@@ -450,3 +455,5 @@ import java.util.Scanner;
                 }
             }
 
+//설명 사용자에게 저장된 결과를 조회할지 묻고, "inquiry"를 입력하면 results 컬렉션에 저장된 모든 연산 결과를 순서대로
+    //출력합니다. 컬렉션이 비어져 있다면 "저장된 결과가 없습니다"메세지를 출력합니다
